@@ -1,0 +1,305 @@
+/*css reset start*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*補充*/
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+/*css reset end*/
+
+/*index page start*/
+.table-0 {
+	position: relative;
+	max-width:1100px;
+	height:auto;
+	box-shadow:3px 3px 15px #cccccc;
+	margin:0px auto ;
+	font-family: "Microsoft JhengHei","Arial";
+}
+	.fixed-container {
+		z-index: 1000;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		max-width:1100px;
+		margin: 0 auto;
+		box-shadow:3px 3px 15px #cccccc;
+	}
+		.header{
+			background-image:url('../images/top_02.gif');
+		}
+			.header-menu {
+				background: -webkit-linear-gradient(#329CED,#0165BB);
+				height: 42px;
+				line-height: 40px;
+			}
+				.header-menu ul {
+					float: right;
+				}
+					.header-menu li {
+						float: left;
+						width: 100px;
+					}
+						.header-menu a {
+							text-decoration:none;
+							color:#FFF;
+							display: block;
+							text-align: center;
+						}
+						.header-menu a:hover {
+							border:1px solid #329CED;
+							background: -webkit-linear-gradient(#0065ba,#0165E4);
+						}
+						.clear-fix {
+							clear:both;
+						}
+	/*圖片輪播*/
+	.slider_container {
+		width:100%;
+		height: 300px;
+		/*margin-bottom:18px;*/
+	    margin-top:137px; 
+	    position: relative;
+	}
+	.top-pic {
+		width: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    opacity: 0;
+	    filter:alpha(opacity=0);	/*透明度*/
+	}
+		.top-pic img {
+			width:100%;
+			display: block;
+		}
+	.top-pic {
+		-webkit-animation: round 25s linear infinite;
+	            animation: round 25s linear infinite;
+	}
+	@-webkit-keyframes round {
+		4% {opacity:1;filter: alpha(opacity=100); /* 0 - 1秒 淡入*/}
+		20% {opacity:1;filter: alpha(opacity=100); /* 1- 5秒靜止*/}
+		24% {opacity:0;filter: alpha(opacity=0);  /* 5-6秒淡出*/}
+	}
+	@keyframes round {
+		4% {opacity:1;filter: alpha(opacity=100); /* 0 - 1秒 淡入*/}
+		20% {opacity:1;filter: alpha(opacity=100); /* 1- 5秒靜止*/}
+		24% {opacity:0;filter: alpha(opacity=0);  /* 5-6秒淡出*/}
+	}
+	.top-pic:nth-child(5) {
+	    -webkit-animation-delay: 0s;
+	            animation-delay: 0s;
+	}
+	.top-pic:nth-child(4) {
+	    -webkit-animation-delay: 5s;
+	            animation-delay: 5s;
+	}
+	.top-pic:nth-child(3) {
+	    -webkit-animation-delay: 10s;
+	            animation-delay: 10s;
+	}
+	.top-pic:nth-child(2) {
+	    -webkit-animation-delay: 15s;
+	            animation-delay: 15s;
+	}
+	.top-pic:nth-child(1) {
+	    -webkit-animation-delay: 20s;
+	            animation-delay: 20s;
+	}
+	/*圖片輪播end*/
+
+	/*邊框圓角陰影樣式*/
+		.box-style-1 {
+			box-shadow:2px 2px 7px #cccccc;
+			border-radius:10px;
+		}
+		.box-style-2 {
+			border-top-left-radius:15px;
+			border-top-right-radius:15px;
+			box-shadow:1px -2px 10px #cccccc;
+		}
+	.table-1 {
+		width:100%;
+		height:auto;
+		margin:0px auto 15px;
+		/*padding: 0 10px;*/
+	}
+		.index-content {
+			width: 68%;
+			margin-left: 1.3%;
+			height:auto;
+			padding-top: 10px;
+			display: inline-block;
+		}
+			.index-about {
+				background-image: url(../images/h_03.jpg);
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 250px;
+				position: relative;
+			}
+				.index-about p {
+					display: block;
+					position: absolute;
+					right: 18px;
+					bottom: 15px;
+					width:70%;
+					height: auto;
+					font-size: 10pt;
+				    letter-spacing: 3px;
+					text-indent: 2em;
+					line-height: 170%;
+				}
+				.link-more {
+					color: #0088cc;
+					text-decoration: none;
+				}
+				.link-more:hover {
+					color: #007f33;
+				}
+
+			.index-otherinfo {
+				padding-left: 10px;
+			}
+				/*youtube 影片自動縮放尺寸*/
+				.video-container {
+					width: 55%;
+					display: inline-block;
+					float: left;
+					margin: 2%;
+				}
+					.video-container iframe {
+						width: 100%;
+						height: 250px;
+					}
+				.notice-board {
+					display: inline-block;
+					float: right;
+					width: 35%;
+					margin-top: 1%;
+					margin-right: 5%;
+				}
+					.nav{
+						margin: 10px 0 0 20px;
+					}
+						.nav li{
+							text-align:left;
+							text-decoration: none;
+							list-style-type:square;
+							padding: 3px 0;
+							margin: 2px 0 2px 8px;
+							border-bottom: 1px dashed #ddd;
+						}
+		.side-menu-container {
+			float: right;
+			width: 28%;
+			margin-right: 1.3%;
+			display: inline-block;
+			vertical-align:top;
+		}
+			.side-menu {
+				width: 100%;
+				padding:20px 20px 30px 20px;
+				margin-bottom: 40px;
+			}
+
+		.tab-inline {
+			display:inline-block;
+			margin:0px auto 8px;
+		}
+		.table-1-3 {
+			width: 30%;
+			height: auto;
+			margin:10px 17px;
+			vertical-align: top;
+			font-size: 11pt;
+		}
+		.infor-1-3 {
+			text-align:left;
+			line-height: 24px;
+			letter-spacing: 3px;
+		}
+			.infor-1-3 p {
+				font-size: 15px;
+			}
+			.title-style-1 {
+				font-size:17px;
+				color:#0080BD;
+				font-weight:bold;
+				letter-spacing:1px;
+				margin-bottom: 5px;
+			}
+			.table-1-3 ol li {
+				list-style-type:decimal;
+				margin-left: 2em;
+			}
+		.link-3pic {
+			text-align: center;
+		}
+	
+	.footer {
+		width:100%;
+		padding: 15px 0;
+		background: #0065ba;
+		text-align:center;
+	}
+	.footer-2 {
+		display:inline-block;
+		letter-spacing: 2px;
+		font-size: 13px;
+		color: #fff;
+		margin:0px 10px;
+	}
+
+/*index page end*/
