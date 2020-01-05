@@ -433,7 +433,7 @@ img{
 		}
 		@media (max-width: 768px) {
 			.side-menu {
-					padding:0 0 0 4%;
+					padding:0 3%;
 				}
 		}
 
