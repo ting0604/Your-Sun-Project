@@ -302,6 +302,7 @@ img{
 		@media (max-width: 1024px) {
 			.video-container {
 				width: 54%;
+
 			}
 			.index-content-2 {
 				width: 44%;
@@ -361,6 +362,7 @@ img{
 					width: 100%;
 					display: block;
 					float: none;
+					margin: 0;
 				}
 				.index-content-2 {
 					width: 100%;
