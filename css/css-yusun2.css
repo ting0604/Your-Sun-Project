@@ -158,6 +158,32 @@ img{
 					max-height: 500px; 
 				} 
 			}
+			@media (max-width: 736px) {
+				.header-menu {
+					top: 138px;
+					height: 199%;
+				}
+			}
+			@media (max-width: 667px) {
+				.header-menu {
+					height: 171%;
+				}
+			}
+			@media (max-width: 640px) {
+				.header-menu {
+					height: 160%;
+				}
+			}
+			@media (max-width: 568px) {
+				.header-menu {
+					height: 131%;
+				}
+			}
+			@media (max-width: 414px) {
+				.header-menu {
+					height: auto;
+				}
+			}
 			@media (max-width: 375px) {
 				.header-menu {
 					top: 128px;
@@ -165,7 +191,7 @@ img{
 			}
 			@media (max-width: 360px) {
 				.header-menu {
-					top: 125px;
+					top: 128px;
 				}
 			}
 			@media (max-width: 320px) {
@@ -491,7 +517,6 @@ img{
 		}
 			.title-style-1 h2 {
 				display: inline-block;
-				text-align: center;
 			}
 			.title-line {
 				display: inline-block;
@@ -505,26 +530,29 @@ img{
 			height: auto;
 			margin: 1% 1.4%;
 			vertical-align: top;
-			font-size: 11pt;
 		}
+			.table-1-3 a {
+				text-decoration: none;
+			}
 			.table-1-3 ol li {
 					list-style-type:decimal;
 					margin-left: 2em;
-					text-align: left;
 				}
-		.infor-1-3 {
-					line-height: 24px;
-					letter-spacing: 3px;
-					font-size: 14px;
-					color: #4a4b46;
-					padding: 2% 10px;
-				}
-		.folded-effect {
-		    position: relative;
+
+		/*精選課程*/
+		.course-1-3 {
+		    line-height: 24px;
+			letter-spacing: 3px;
+			font-size: 14px;
+			color: #4a4b46;
+			padding: 7% 10px;
+
+			position: relative;
 		    border-radius: .5em;
 		    background: linear-gradient(-150deg, transparent 1.5em, #c0ebff 0);
 		}
-		.folded-effect::before {
+			/*摺頁效果*/
+		.course-1-3::before {
 			content: '';
 			position: absolute;
 			top: 0;
@@ -545,27 +573,25 @@ img{
 				margin-bottom: 5px;
 			}
 				.link-more-2 {
-					text-decoration: none;
 					font-weight: bold;
 					color: #de9f7e;
 				}
 				.link-more-2:hover {
 					color: #efc83d;
 				}
-			.outlink-1-3 a {
-				text-decoration: none;
-			}
-			.card-1-3 {
+		/*相關連結*/
+			
+			.outlink-1-3 {
 			  width: 100%;
 			  height: 150px;
 			  background: #428bca;
 			  position: relative;
 			  box-shadow: 0 4px 10px rgba(0, 0, 0, .30);
 			}
-			.card-1-3:hover {
+			.outlink-1-3:hover {
 				box-shadow: 0 6px 15px rgba(0, 0, 0, .40);
 			}
-				.card-1-3 p {
+				.outlink-1-3 p {
 					display: inline-block;
 				    float: right;
 				    margin-top: 16%;
@@ -577,23 +603,23 @@ img{
 				    text-align: center;
 				    line-height: 1.5;
 				}
-			.trapezoid {
-				 width:50%;
-				 border-right: 50px solid transparent;
-				 border-top:150px solid #F6F0EA;
-				 position: relative;
-			}
-				.trapezoid img {
-					border-radius: 50%;
-					vertical-align: top;
-					width: 93%;
-					position: absolute;
-					bottom: 30px;
-					left: 15px;
-					display: block;
-					border: 7px double #beb2a5;
-					padding: 3px;
+				.trapezoid {
+					 width:50%;
+					 border-right: 50px solid transparent;
+					 border-top:150px solid #F6F0EA;
+					 position: relative;
 				}
+					.trapezoid img {
+						border-radius: 50%;
+						vertical-align: top;
+						width: 93%;
+						position: absolute;
+						bottom: 30px;
+						left: 15px;
+						display: block;
+						border: 7px double #beb2a5;
+						padding: 3px;
+					}
 				.bookmark:before{ 
 					content:'';
 					width:20px;
@@ -628,42 +654,41 @@ img{
 				}
 
 	@media (max-width: 1024px) {
-		.infor-1-3 {
+		.course-1-3 {
 			font-size: 14px;
 			letter-spacing: 2px;
-			padding: 2% 9px;
+			padding: 6% 9px;
 		}
-			.infor-1-3 h2 {
+			.course-1-3 h2 {
 				letter-spacing: 0px;
 			}
 	}
-
 	@media (max-width: 812px) {
 		.title-style-1 {
 			padding-top: 5px;
 		}
-		.infor-1-3 {
+		.course-1-3 {
 			letter-spacing: 1px;
-			width: 29.9%;
 		    height: 180px;
 		}
-		.card-1-3 {
+			.course-1-3 h2 {
+				margin: 12px 6px 0 0;
+			}
+		.outlink-1-3 {
 			box-shadow: 6px 6px 4px #ccc;
 		}
-			.card-1-3 p{
+			.outlink-1-3 p{
 				width: 40%;
 				font-size: 23px;
 				margin-top: 22%;
 			}
-			.card-1-3 .trapezoid img {
+			.outlink-1-3 .trapezoid img {
 				display: none;
 			}
 		.bookmark {
 			left: 75%;
 		}
-
 	}
-
 	@media (max-width: 768px) {
 		.section-wrap {
 			margin: 0 4% 15px;
@@ -674,36 +699,43 @@ img{
 		.rwd-m {
 			margin: 1%;
 		}
-			.infor-1-3 {
-				letter-spacing: 3px;
+			.course-rwd {
 				width: 100%;
-			    height: auto;
-			    padding: 2% 9px;
-			    margin-bottom: 3%;
 			}
-				.card-1-3 p {
-					width: 45%;
-				    font-size: 22px;
-				    margin-top: 28%;
+				.course-1-3 {
+					letter-spacing: 3px;
+					height: auto;
+					padding: 2% 9px;
+					margin-bottom: 3%;
 				}
-			.bookmark {
-				font-size: 13px;
-			}
-	}
+					.course-1-3 h2 {
+						margin: 0;
+					}
+					.outlink-1-3 p {
+						width: 45%;
+					    font-size: 22px;
+					    margin-top: 28%;
+					}
 
+				.bookmark {
+					font-size: 13px;
+				}
+	}
 	@media (max-width: 667px) {
-		.infor-1-3 {
+		.course-1-3 {
 			letter-spacing: 1px;
 		}
-		.card-1-3 {
+
+		.outlink-1-3 {
 			height:70px ;
 		}
-			.card-1-3 p {
-				font-size: 17px;
-				width: 100%;
-				margin-right: -4%;
-				margin-top: 20%;
-				text-align: left;
+			.outlink-1-3 p {
+			    font-size: 17px;
+			    width: 100%;
+			    margin-right: 0%;
+			    margin-top: 19%;
+			    text-align: center;
+			    letter-spacing: 1px;
 			}
 			.trapezoid {
 				display: none;
@@ -715,12 +747,10 @@ img{
 		    top: 10%;
 		    left: 56%;
 		}
-
 		.bookmark:before {
     		border: 10px solid;
     		border-color: transparent #ffc83d transparent transparent;
 		}
-
 		.bookmark:after {
 		    right: -10px;
     		top: 20px;
@@ -728,30 +758,47 @@ img{
 		    border-color: transparent transparent transparent #58661C;
 		    border-top: 0;
 		}
-		
 	}
-	
 	@media (max-width: 414px) {
-			.card-1-3 p {
+			.outlink-1-3 p {
 		        font-size: 14px;
 			    margin-right: 36%;
 			    margin-top: 22%;
 			    width: 55%;
+			    text-align: left;
+    			letter-spacing: inherit;
 			}
 		.bookmark{
-			left:60%;
+			left:59%;
 			font-size: 10px;
 		}
 	}
-
-
+	@media (max-width: 375px) {
+			.outlink-1-3 p {
+		        font-size: 14px;
+			    margin-right: 36%;
+			    margin-top: 30%;
+			    width: 58%;
+			    line-height: 1.2;
+			}
+	}
 	@media (max-width: 360px) {
-		.card-1-3 p{
+		.outlink-1-3 p{
 			font-size: 10px;
 		    margin-right: 35%;
-		    margin-top: 32%;
-		    width: 58%;
+		    margin-top: 30%;
+    		width: 54%;
+		    line-height: 1.5;
 		}
+	}
+	@media (max-width: 320px) {
+		.course-1-3 {
+			padding: 4% 9%;
+		}
+		.outlink-1-3 p{
+		    margin-top: 33%;
+		    width: 56%;
+				}
 	}
 
 
