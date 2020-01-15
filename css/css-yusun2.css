@@ -320,6 +320,9 @@ img{
 						    text-decoration: none;
 						    font-weight: bold;
 						}
+						.link-more-1:hover {
+							color: #b8dec7;
+						}
 				.index-ab-top-right {
 					width: 35%;
 					display: inline-block;
@@ -338,7 +341,7 @@ img{
 					display: inline-block;
 					text-align: center;
 				}
-					iframe {
+					.index-ab-btm-left iframe {
 						width: 90%;
 						height: 185px;
 					}
@@ -400,7 +403,7 @@ img{
 			.index-ab-btm-left {
 				width: 51%;
 			}
-				iframe {
+				.index-ab-btm-left iframe {
 					height: 155px;
 				}
 			.index-ab-btm-right {
@@ -412,7 +415,7 @@ img{
 					width: 100%;
 					padding:0 3% 2%;
 				}
-					iframe {
+					.index-ab-btm-left iframe {
 						width: 100%;
 						height: 165px;
 					}
@@ -874,11 +877,283 @@ img{
 /*index page end*/
 
 
-/*notice-board cooperation web-link start*/
-.container {
-	margin: 1% 3%;
-	height: auto;
-}
+	/*about start*/
+	.container { /*共用*/
+		margin: 1% 3%;
+		height: auto;
+	}
+		.title-img {
+			display: block;
+		}
+		.page-wrap { /*共用*/
+			padding: 0 1.5% 2%;
+		}
+			.about-img-1 {
+				display: inline-block;
+				width: 30%;
+				border: 8px solid #ffffff;
+				box-shadow: -3px 3px 7px #d6d6d6;
+				margin-top: 10px;
+			}
+			.about-info-1 {
+				line-height: 2.1;
+				display: inline-block;
+				width: 55%;
+				vertical-align: top;
+				border-left: 1px solid #ddd;
+				margin-left: 2%;
+				margin-top: 10px;
+				padding-left: 4%;
+			}
+				.li-over-title {
+					text-indent: -20px;
+				}
+				.title-style-3 { /*共用*/
+					font-size: 20px;
+					font-weight: bold;
+					color: #0080BD;
+				}
+					.about-info-1 li {
+						text-indent: -14px;
+					}
+					.about-info-1 li::before {
+						content: "◆";
+						color: #f08e31;
+					}
+			.about-img-3 {
+				display: none;
+			}
+			.about-info-2 {
+				line-height: 2;
+				text-indent: 32px;
+				display: inline-block;
+				width: 74%;
+				margin-top: 3%;
+				border-right: 1px solid #fff;
+				padding-right: 1%;
+			}
+				.about-info-2 span{
+					color: #f76707;
+					font-weight: bold;
+				}
+			.about-img-2 {
+				display: inline-block;
+				width: 23%;
+				border: 8px solid #ffffff;
+				box-shadow: -3px 3px 7px #d6d6d6;
+				margin-left: 2%;
+			}
+	@media (max-width: 812px) {
+			.container {
+				margin: 0;
+			}
+				.about-img-1 {
+					margin-top: 38px;
+				}
+				.about-info-1 {
+					width: 66%;
+				}
+				.about-info-2 {
+					width: 100%;
+				}
+				.about-img-2 {
+					display: none;
+				}
+	}
+	@media (max-width: 768px) {	
+		.about-img-1 {
+			width: 26%;
+		}
+		.about-info-1 {
+			width: 71%;
+			margin-left: 0;
+		}
+	}
+	@media (max-width: 568px) {	
+		.page-wrap {
+			padding:0 3% 0;;
+		}
+			.about-img-1 {
+				display: none;
+			}
+			.about-info-1 {
+				display: block;
+				width: 100%;
+				border-left: 0;
+				margin-top: 0;
+			}
+			.about-img-3 {
+				display: block;
+			}
+			.about-info-2 {
+				margin-top: 1%;
+			}
+	}
+	/*about end*/
+
+    /*teacher start*/
+		.teacher-card {
+			display: inline-block;
+			background: #e7e7e7;
+			width: 45%;
+			height: auto;
+			padding: 2%;
+			margin: 2.3%;
+			box-shadow: 2px 2px 8px #bbbbbb;
+		}
+			.teacher-card img {
+				width: 36%;
+				display: inline-block;
+				border: 12px solid #fff;
+				margin-right: 2%;
+				border-radius: 4px;
+			}
+			.teacher-info-1 {
+				width: 60%;
+				display: inline-block;
+				vertical-align: top;
+				font-size: 17px;
+				line-height: 1.3;
+
+			}
+				.teacher-info-1 li {
+					background: #fff;
+					margin-bottom: 1%;
+					padding:1%;
+					margin-bottom: 7%;
+					border-radius:5px;
+					background: #fff4de;
+				}
+				.teacher-info-1 span {
+					display: block;
+					text-align: right;
+				}
+					.btn-more {
+						text-decoration: none;
+						color: #fff;
+						padding: 1% 4%;
+						border-radius: 5px;
+						/*background-color: #485461;
+	                    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);*/
+						
+						background-color: #ec6e22;
+	                    background-image: linear-gradient(315deg, #ec6e22 0%, #faa933 74%);
+					}
+					.btn-more:hover {
+					    color: #d1d1d1;
+					    background-color: #bfebff;
+					    background-image: linear-gradient(315deg, #bfebff 0%, #e0fbe6 74%);
+					    border: 2px solid #ebe6e6;
+					}
+	@media (max-width: 1024px) {
+			.teacher-info-1 {
+				font-size: 16px;
+			}
+	}
+	@media (max-width: 568px) {	
+		.teacher-card {
+			display: block;
+			width: 100%;
+			padding: 3%;
+			margin: 5% 0;
+		}
+	}
+	@media (max-width: 414px) {	
+		.teacher-info-1 {
+			font-size: 15px;
+		}
+	}
+	@media (max-width: 375px) {	
+		.teacher-card img {
+			width: 31%;
+		}
+		.teacher-info-1 {
+			width: 65%;
+		}
+	}
+	/*teacher end*/
+	
+	/*teacher-1 start*/
+	hr {
+		border:3px dashed #ddd;
+	}
+	.teacher-img {
+		display: inline-block;
+		vertical-align: top;
+		width: 16%;
+		border: 1px solid #ddd;
+		padding: 7px;
+		border-radius: 5px;
+	}
+	.teacher-info-2 {
+		display: inline-block;
+		vertical-align: top;
+		width: 36%;
+		line-height: 1.5;
+		padding:1%;
+	}
+		.teacher-info-2 h3 span {
+			font-size: 33px;
+		}
+		.teacher-info-2 ul {
+			text-indent: 20px;
+		}
+			.teacher-info-2 li::before {
+				content: "◆";
+				color: #f08e31;
+			}
+	.teacher-info-3 {
+		display: inline-block;
+		vertical-align: top;
+		width: 46%;
+		border-left: 1px solid #ddd;
+		/*padding: 1%;*/
+		padding: 1% 0 1% 2%;
+	}
+		.teacher-info-3 p{
+			line-height:1.5;
+			text-indent: 37px;
+			padding:1%; 
+		}
+
+	@media (max-width: 812px) {	
+		.teacher-img {
+			width: 22%;
+		}
+		.teacher-info-2 {
+			width: 30%;
+		}
+	}
+	@media (max-width: 768px) {	
+		.teacher-img {
+			width: 33%;
+		}
+		.teacher-info-2 {
+			width: 61%;
+			margin-left: 2%;
+		}
+		.teacher-info-3 {
+			width: 100%;
+			border-left: none;
+			padding: 1% 0;
+		}
+	}
+	@media (max-width: 414px) {	
+		.teacher-img {
+			width: 100%;
+			max-width: 300px;
+		}
+		.teacher-info-2 {
+			width: 100%;
+		}
+			.teacher-info-3 p {
+				padding: 1% 0;
+			}
+	}
+	/*teacher-1 end*/
+
+	/*notice-board cooperation web-link contact start*/
+
 	.notice-table {
 		margin: 0 auto;
 		text-align: left;
@@ -889,7 +1164,7 @@ img{
 	}
 		.notice-table li::before {
 			content: "::";
-			color: red;
+			color: #f08e31;
 			
 		}
 		.notice-table li:hover {
@@ -904,17 +1179,42 @@ img{
 				border-bottom: 1px solid #8a8a8a;
 				width: 98%;
 			}
-			
 
-	@media (max-width: 812px) {
-		.container {
-			margin: 0;
-		}
-	}
 	@media (max-width: 414px) {
-		.notice-table {
+		.notice-table { /*共用*/
 			letter-spacing: 1px;
 		}
 	}
-				
 
+	/*contact*/
+	.map {
+		padding: 2%;
+		width: 80%;
+	}
+		.map iframe {
+			width: 100%;
+			height: 500px;
+		}
+	.contact-text {
+		line-height: 1.5;
+		padding:0 2% 2%;
+	}
+		.contact-text li::before {
+			content: "◆";
+			color: #f08e31;
+		}
+		
+
+	@media (max-width: 768px) {
+		.map {
+			padding: 2%;
+			width: 100%;
+		}
+	}
+	@media (max-width: 667px) {
+			.map iframe {
+				height: 200px;
+			}
+	}
+
+	/*notice-board cooperation web-link contact end*/
